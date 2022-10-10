@@ -1,6 +1,8 @@
 export default {
+  ssr: false,
+  target: 'static',
   head: {
-    title: 'NEFA',
+    title: 'Graha Rekso Credit',
     htmlAttrs: {
       lang: 'en',
     },

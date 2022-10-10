@@ -3,19 +3,19 @@
     <!-- Hero section -->
     <section id="hero" class="w-full pb-24">
       <BaseSection>
-        <div class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
+        <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
           <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
-            >Sign Up Today</span
+            >Mandiri Tumbuh Bersama Anda</span
           >
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            class="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+            class="text-[2.5rem] sm:text-6xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
           >
-            The World's <span class="text-header-gradient">Fastest Growing</span> Crypto Web App
+            KCP Jakarta <br/><span class="text-header-gradient">Graha Rekso</span><br/><span>Area Pulogadung</span> 
           </h1>
           <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph hidden sm:block">
-            Buy and sell 200+ cryptocurrencies with 20+ flat currencies using bank transfers or your credit/debit card.
+            Bantu Mandiri, Teman, & Diri Sendiri
           </p>
           <div
             data-aos="fade-up"
@@ -26,17 +26,17 @@
             <BaseButton
               class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
             >
-              Get Started
+              Mulai
             </BaseButton>
-            <BaseButton
+            <!-- <BaseButton
               class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center"
             >
               <span>Download App</span>
               <ChevronDownIcon :size="20" class="mt-1 text-[#0c66ee]" />
-            </BaseButton>
+            </BaseButton> -->
           </div>
         </div>
-        <div class="hidden sm:block col-span-12 lg:col-span-6">
+        <div class="hidden sm:block col-span-12 lg:col-span-5">
           <div class="w-full">
             <img
               data-aos="fade-up"
@@ -310,7 +310,7 @@
 </template>
 
 <script>
-import aosMixin from '@/mixins/aos'
+import aosMixin from '@/mixins/aos' 
 export default {
   name: 'IndexPage',
   mixins: [aosMixin],
