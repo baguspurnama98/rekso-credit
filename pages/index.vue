@@ -5,17 +5,17 @@
       <BaseSection>
         <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
           <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
-            >Mandiri Tumbuh Bersama Anda</span
+            >Terdepan, Terpercaya, Tumbuh Bersama Anda</span
           >
           <h1
             data-aos="fade-right"
             data-aos-once="true"
             class="text-[2.5rem] sm:text-6xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
           >
-            KCP Jakarta <br/><span class="text-header-gradient">Graha Rekso</span><br/><span>Area Pulogadung</span> 
+            KCP Jakarta <br /><span class="text-header-gradient">Graha Rekso</span><br /><span>Area Pulogadung</span>
           </h1>
           <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph hidden sm:block">
-            Bantu Mandiri, Teman, & Diri Sendiri
+            Mandiri Digital, Tiada Henti Membangun Negeri
           </p>
           <div
             data-aos="fade-up"
@@ -23,12 +23,13 @@
             data-aos-delay="700"
             class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
           >
-          <a href="#tabelData">
-            <BaseButton
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white" 
+            <a href="#tabelData">
+              <BaseButton
+                class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
+              >
+                Mulai
+              </BaseButton></a
             >
-            Mulai
-            </BaseButton></a>
             <!-- <BaseButton
               class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center"
             >
@@ -39,13 +40,7 @@
         </div>
         <div class="hidden sm:block col-span-12 lg:col-span-5">
           <div class="w-full">
-            <img
-              data-aos="fade-up"
-              data-aos-once="true"
-              :src="require('~/assets/img/hero-image.webp')"
-              class="-mt-4"
-              alt=""
-            />
+            <img data-aos="fade-up" data-aos-once="true" :src="require('~/assets/img/faq.webp')" class="-mt-4" alt="" />
           </div>
         </div>
         <img
@@ -77,11 +72,11 @@
 
     <!--  Table Credit Information section -->
     <section
-    id="tabelData"
-      class="max-w-screen-xl  mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-10 sm:py-10 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12 "
+      id="tabelData"
+      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-20 sm:py-10 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
     >
       <div class="w-full flex flex-col lg:flex-row items-center justify-center mt-10 py-10">
-        <TableData/>
+        <TableData />
         <!-- <LandingCryptoStatistic
           data-aos="fade-up"
           title="🔥 Trending"
@@ -106,31 +101,21 @@
     </section>
 
     <!-- Buy and trade section -->
-    <section class="w-full my-24">
+    <section class="w-full my-24 py-20">
       <BaseSection>
         <LandingBuyTradeImage class="sm:hidden mb-8" />
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
           <h2 class="text-4xl font-semibold sm:pr-8 xl:pr-12">
-            Buy & trade on the <br class="hidden sm:block" />
-            original crypto exchange.
+            Simulasi dan Perhitungan <br class="hidden sm:block" />Kredit
           </h2>
           <p class="paragraph">
-            Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto Coin. We accept BTC crypto-currency
+            Hitung dan simulasikan kredit nasabah disini. Suku bunga yang digunakan merupakan suku bunga terbaru.
           </p>
           <div class="space-y-6 lg:pr-12">
-            <LandingExchange
-              name="Amount"
-              value="5.000"
-              :exchange-selected="currencySelected"
-              :exchanges="currencies"
-            />
-            <LandingExchange
-              name="Get"
-              value="0.10901"
-              :exchange-selected="cryptoSelected"
-              :exchanges="cryptocurrencies"
-            />
-            <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Buy Now</BaseButton>
+            <LandingExchange name="Loan Amount" value="0" :exchange-selected="currencySelected" />
+            <LandingExchange name="Interest Rate" value="0" :exchange-selected="cryptoSelected" />
+            <LandingExchange name="Long Term" value="0" :exchange-selected="cryptoSelected" />
+            <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Hitung</BaseButton>
           </div>
         </div>
         <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" />
@@ -140,58 +125,65 @@
     <!-- Partners section -->
     <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
       <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
-        <h3 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold">Trusted Partners Worldwide</h3>
-        <p data-aos="flip-down" class="paragraph">We're partners with countless major organisations around the globe</p>
+        <h3 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold">Fun Digital Banking World</h3>
+        <p data-aos="flip-down" class="paragraph">
+          Financial Super App Livin' by Mandiri dan Wholesale Digital Super Platform Kopra by Mandiri
+        </p>
         <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
-          <LandingPartnerImage
-            v-for="img in ['clever.png', 'diamon-cutts.png', 'swiss-finance.png', 'gambio.png']"
-            :key="img"
-            :img="img"
-          />
+          <LandingPartnerImage v-for="img in ['livin-logo.png', 'kopra-logo.png']" :key="img" :img="img" />
         </div>
       </div>
     </section>
 
-    <!-- Credit card section -->
+    <!-- Livin section -->
     <section class="w-full my-36">
       <BaseSection data-aos="fade-down">
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
-            <img :src="require('~/assets/img/nefa-cc.webp')" class="w-[95%]" alt="" />
+            <img :src="require('~/assets/img/livin.png')" class="w-[95%]" alt="" />
           </div>
         </div>
         <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
           <h2 class="text-4xl font-semibold">
-            Introducing the <span class="text-header-gradient">NEFA</span> Credit Card
+            Living a Lively Life With <span class="text-header-gradient">Livin' by Mandiri</span>
           </h2>
-          <p class="paragraph">Subject to cardholder and rewards terms which will be available at application.</p>
+          <p class="paragraph">
+            Nikmati gampangnya buka rekening online, transaksi, dan integrasi segala kebutuhan finansial kamu hanya
+            dengan <b>Livin' by Mandiri</b>
+          </p>
           <ul class="space-y-4 sm:space-y-2">
-            <LandingListItem title="Up to 3% back on purchases" />
-            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
-            <LandingListItem title="No annual fee" />
+            <LandingListItem title="Tinggal Selfie Tabungan Jadi" />
+            <LandingListItem title="Cek Saldo & Top Up Otomatis e-wallet" />
+            <LandingListItem title="Satu Akun untuk Semua" />
           </ul>
-          <BaseButton
-            class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base"
-            >Join the waitlist</BaseButton
-          >
+          <div class="flex flex-col sm:flex-row">
+          <a href="https://bankmandiri.co.id/en/livin" target="_blank">
+            <BaseButton
+              class="mt-5 w-full sm:max-w-[250px] p-3 bg-inherit text-gradient border border-[#0c66ee] text-base"
+              >Pelajari Selengkapnya</BaseButton
+            >
+          </a></div>
         </div>
       </BaseSection>
     </section>
 
-    <!-- Advanced trading tools section -->
+    <!-- Kopra section -->
     <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
         <LandingTradingToolImage class="sm:hidden" />
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
-          <h2 class="text-4xl font-semibold">Advanced Trading <span class="text-header-gradient">Tools</span></h2>
+          <h2 class="text-4xl font-semibold">
+            Super Platform <span class="text-header-gradient">Kopra by Mandiri</span>
+          </h2>
           <div class="space-y-2">
-            <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
+            <h4 class="text-lg font-medium">Wholesale Digital Super Platform</h4>
             <p class="paragraph text-sm xl:text-base">
-              We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-              reliable order execution and constant uptime.
+              Konsep layanan digital single access yang menjadi pusat aktivitas informasi dan transaksi finansial bagi
+              ekosistem bisnis para pelaku usaha di segmen wholesale dan value chainnya secara end to end (hulu ke
+              hilir).
             </p>
           </div>
-          <div class="space-y-2">
+          <!-- <div class="space-y-2">
             <h4 class="text-lg font-medium">A Range of Powerful Apis</h4>
             <p class="paragraph text-sm xl:text-base">
               Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and
@@ -204,14 +196,18 @@
               Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers
               for partners.
             </p>
-          </div>
+          </div> -->
           <div class="flex flex-col sm:flex-row">
-            <BaseButton class="px-10 py-4 bg-inherit text-gradient border border-[#4A8FF6] text-base">
-              Get Started
-            </BaseButton>
-            <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center underline rounded-full">
+            <a href="https://bankmandiri.co.id/en/kopra-by-mandiri" target="_blank">
+              <BaseButton
+                class="mt-5 w-full sm:max-w-[250px] p-3 bg-inherit text-gradient border border-[#0c66ee] text-base"
+                >Pelajari Selengkapnya</BaseButton
+              >
+            </a>
+
+            <!-- <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center underline rounded-full">
               Learn More
-            </BaseButton>
+            </BaseButton> -->
           </div>
         </div>
         <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" />
@@ -279,7 +275,7 @@
     </section>
 
     <!-- FAQ section -->
-    <section class="w-full my-24">
+    <!-- <section class="w-full my-24">
       <BaseSection>
         <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6">
           <div class="w-full">
@@ -295,7 +291,7 @@
           </ul>
         </div>
       </BaseSection>
-    </section>
+    </section> -->
 
     <div class="w-full my-10 flex justify-center">
       <a
@@ -313,7 +309,7 @@
 </template>
 
 <script>
-import aosMixin from '@/mixins/aos' 
+import aosMixin from '@/mixins/aos'
 export default {
   name: 'IndexPage',
   mixins: [aosMixin],

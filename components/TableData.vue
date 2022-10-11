@@ -32,12 +32,6 @@
   </div>
 </template>
 <script>
-// import { vueGsheets } from 'vue-gsheets'
-// const url =
-//   'https://sheets.googleapis.com/v4/spreadsheets/1f4wopncX1XUx_fuepXlqR3nBDxpuyHToo0oCPDT9Ycc/values/Sheet1!A1:S2?key=AIzaSyBSWyF6kNY2qB4KklKubjos4u_hNIOFx_I'
-// const axios = require('axios')
-// const _ = require('lodash')
-
 export default {
   name: 'TableData',
   data: () => ({

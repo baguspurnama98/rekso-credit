@@ -6,10 +6,11 @@
         type="text"
         class="w-full text-lg font-medium text-right border-none ring-0 focus:outline-none focus:ring-0"
         name="url"
-        :value="value"
+        
+        :placeholder="note.name"
       />
     </div>
-    <div class="relative w-full max-w-[106px] sm:max-w-[159px]">
+    <!-- <div class="relative w-full max-w-[106px] sm:max-w-[159px]">
       <button
         type="button"
         class="relative w-full flex items-center justify-center space-x-1 relative sm:px-6 py-[1.35rem] border border-[#0c66ee] rounded-xl text-sm font-medium"
@@ -40,7 +41,7 @@
           </li>
         </ul>
       </transition>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -59,9 +60,9 @@ export default {
       type: Object,
       required: true,
     },
-    exchanges: {
-      type: Array,
-      required: true,
+    note: {
+      type: String,
+      default:''
     },
   },
   data() {
