@@ -13,6 +13,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_1ee3f991 from 'nuxt_plugin_plugin_1ee3f991' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_08a07f34 from 'nuxt_plugin_axios_08a07f34' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_smoothscroll_ac9d6bbe from 'nuxt_plugin_smoothscroll_ac9d6bbe' // Source: ..\\plugins\\smooth-scroll.js (mode: 'all')
 import nuxt_plugin_mdi_50afec0a from 'nuxt_plugin_mdi_50afec0a' // Source: ..\\plugins\\mdi.js (mode: 'all')
 
@@ -180,6 +181,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_1ee3f991 === 'function') {
     await nuxt_plugin_plugin_1ee3f991(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_axios_08a07f34 === 'function') {
+    await nuxt_plugin_axios_08a07f34(app.context, inject)
   }
 
   if (typeof nuxt_plugin_smoothscroll_ac9d6bbe === 'function') {

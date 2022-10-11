@@ -1,5 +1,6 @@
 export { default as LineChart } from '../..\\components\\LineChart.vue'
 export { default as NavLink } from '../..\\components\\NavLink.vue'
+export { default as TableData } from '../..\\components\\TableData.vue'
 export { default as BaseAccordion } from '../..\\components\\base\\Accordion.vue'
 export { default as BaseButton } from '../..\\components\\base\\Button.vue'
 export { default as BaseFooter } from '../..\\components\\base\\Footer.vue'

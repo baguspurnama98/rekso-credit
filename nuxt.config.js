@@ -24,7 +24,7 @@ export default {
   plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js'],
   components: true,
   buildModules: ['@nuxtjs/eslint-module', '@nuxt/postcss8'],
-  modules: [],
+  modules: ['@nuxtjs/axios',],
   build: {
     postcss: {
       plugins: {

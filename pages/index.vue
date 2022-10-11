@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full pb-24">
+    <section id="hero" class="w-full pb-32">
       <BaseSection>
         <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
           <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
@@ -23,11 +23,12 @@
             data-aos-delay="700"
             class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
           >
+          <a href="#tabelData">
             <BaseButton
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
+              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white" 
             >
-              Mulai
-            </BaseButton>
+            Mulai
+            </BaseButton></a>
             <!-- <BaseButton
               class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center"
             >
@@ -74,12 +75,14 @@
       </BaseSection>
     </section>
 
-    <!-- Crypto statistic section -->
+    <!--  Table Credit Information section -->
     <section
-      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
+    id="tabelData"
+      class="max-w-screen-xl  mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-10 sm:py-10 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12 "
     >
-      <div class="w-full flex flex-col lg:flex-row items-center justify-center">
-        <LandingCryptoStatistic
+      <div class="w-full flex flex-col lg:flex-row items-center justify-center mt-10 py-10">
+        <TableData/>
+        <!-- <LandingCryptoStatistic
           data-aos="fade-up"
           title="🔥 Trending"
           :datasets="trendings"
@@ -98,7 +101,7 @@
           title="💎 Recently Added"
           :datasets="recents"
           class="lg:px-8"
-        />
+        /> -->
       </div>
     </section>
 

@@ -5,6 +5,9 @@
   "NavLink": {
     "description": "Auto imported from components/NavLink.vue"
   },
+  "TableData": {
+    "description": "Auto imported from components/TableData.vue"
+  },
   "BaseAccordion": {
     "description": "Auto imported from components/base/Accordion.vue"
   },
