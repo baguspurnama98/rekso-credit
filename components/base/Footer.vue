@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
-      &copy; Copyright 2022 NEFA LLC. All rights reserved
+      &copy; Copyright 2022 Tim BBC - ODP236
     </div>
   </footer>
 </template>
