@@ -4,7 +4,10 @@
     <section id="hero" class="w-full pb-20 sm:pb-36">
       <BaseSection>
         <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 sm:text-left">
-          <span data-aos="fade-right" data-aos-once="true" class="sm:text-base text-gradient font-semibold uppercase text-xs"
+          <span
+            data-aos="fade-right"
+            data-aos-once="true"
+            class="sm:text-base text-gradient font-semibold uppercase text-xs"
             >Terdepan, Terpercaya, Tumbuh Bersama Anda</span
           >
           <h1
@@ -12,7 +15,10 @@
             data-aos-once="true"
             class="text-[2.5rem] sm:text-6xl xl:text-6xl font-bold sm:leading-tight leading-10 capitalize sm:pr-8 xl:pr-10"
           >
-            KCP Jakarta <br /><span class="text-header-gradient">Graha Rekso</span><br /><span class="text-3xl sm:text-6xl">Area Pulogadung</span>
+            KCP Jakarta <br /><span class="text-header-gradient">Graha Rekso</span><br /><span
+              class="text-3xl sm:text-6xl"
+              >Area Pulogadung</span
+            >
           </h1>
           <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph sm:text-sm text-xs">
             Mandiri Digital, Tiada Henti Membangun Negeri
@@ -73,7 +79,7 @@
     <!--  Table Credit Information section -->
     <section
       id="tabelData"
-      class="max-w-screen-xl mx-2 sm:mx-auto  sm:px-6 lg:px-0 py-10 sm:py-10 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
+      class="max-w-screen-xl mx-2 sm:mx-auto sm:px-6 lg:px-0 py-10 sm:py-10 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
     >
       <div class="w-full flex flex-col lg:flex-row items-center justify-center sm:px-5 px-1">
         <TableData />
@@ -153,27 +159,71 @@
           </p>
           <ul class="space-y-4 sm:space-y-2">
             <LandingListItem title="Tinggal Selfie Tabungan Jadi" />
+            <LandingListItem title="Quick Pick Transaksi Favorit" />
             <LandingListItem title="Cek Saldo & Top Up Otomatis e-wallet" />
+            <LandingListItem title="Tarik Tunai Tanpa Kartu" />
             <LandingListItem title="Satu Akun untuk Semua" />
+            <LandingListItem title="Smart Reminder, e-statement, e-billing" />
+            <LandingListItem title="Cashless dengan QRIS" />
+            <LandingListItem title="Goal Saving & Deposito" />
           </ul>
           <div class="flex flex-col sm:flex-row">
-          <a href="https://bankmandiri.co.id/en/livin" target="_blank">
-            <BaseButton
-              class="mt-5 w-full sm:max-w-[250px] p-3 bg-inherit text-gradient border border-[#0c66ee] text-base"
-              >Pelajari Selengkapnya</BaseButton
-            >
-          </a></div>
+            <a href="https://livin.page.link/?utm_medium=12518&utm_source=cab1389521014&utm_campaign=dl&apn=id.bmri.livin&isi=1555414743&ibi=id.bmri.livin&link=https%3A//livin.page.link/referral?p%3Ddl%26c%3Dcab1389521014%26cabang%3D12518" target="_blank">
+              <BaseButton
+                class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium "
+                >Bergabung</BaseButton
+              >
+            </a>
+            <a href="https://bankmandiri.co.id/en/livin" target="_blank">
+            <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center rounded-full sm:ml-5 w-full">
+              Pelajari
+            </BaseButton>
+            </a>
+          </div>
+          <!-- <div>
+            <div class="w-1/3">
+              <a href="https://play.google.com/store/apps/details?id=id.bmri.livin&hl=in&gl=US">
+                <img :src="require('~/assets/img/playstore.png')" class="w-[95%] mb-5" alt="" />
+              </a>
+              <a href="https://apps.apple.com/id/app/new-livin-by-mandiri/id1555414743?l=id">
+                <img :src="require('~/assets/img/appstore.png')" class="w-[95%]" alt="" />
+              </a>
+            </div>
+          </div> -->
         </div>
       </BaseSection>
     </section>
-
+<!-- Getting started section -->
+<section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
+      <div class="w-full py-16 flex flex-col items-center">
+        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
+          Sahabat Terbaik dalam Hal Finansial
+        </h2>
+        <div
+          data-aos="fade-up"
+          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
+        >
+          <LandingStep v-for="step in steps" :key="step.title" :step="step" />
+          <img
+            :src="require('~/assets/img/getting-started/arrow.png')"
+            class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"
+            alt=""
+          />
+          <img
+            :src="require('~/assets/img/getting-started/arrow.png')"
+            class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
     <!-- Kopra section -->
     <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
         <LandingTradingToolImage class="sm:hidden" />
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
           <h2 class="text-4xl font-semibold">
-            Super Platform <span class="text-header-gradient">Kopra by Mandiri</span>
+            Super Platform <span class="text-header-gradient"><br />Kopra by Mandiri</span>
           </h2>
           <div class="space-y-2">
             <h4 class="text-lg font-medium">Wholesale Digital Super Platform</h4>
@@ -183,6 +233,19 @@
               hilir).
             </p>
           </div>
+          <ul class="space-y-4 sm:space-y-2">
+            <LandingListItem title="Foreign Exhange & Cash Management" />
+            <LandingListItem title="Trade & Bank Guarantee" />
+            <LandingListItem title="Virtual Account" />
+            <LandingListItem title="Value Chain" />
+            <LandingListItem title="Online Custody" />
+            <LandingListItem title="Single Sign On" />
+            <LandingListItem title="Virtual Assistant" />
+            <LandingListItem title="Limit Management" />
+            <LandingListItem title="Financial Dashboard" />
+            <LandingListItem title="Onboarding Supplier" />
+            <LandingListItem title="Remittance Tracking" />
+          </ul>
           <!-- <div class="space-y-2">
             <h4 class="text-lg font-medium">A Range of Powerful Apis</h4>
             <p class="paragraph text-sm xl:text-base">
@@ -215,7 +278,7 @@
     </section>
 
     <!-- Industry-leading security section -->
-    <section class="w-full my-24">
+    <!-- <section class="w-full my-24">
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
           <div class="w-full">
@@ -247,32 +310,9 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Getting started section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full py-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
-          Get started in just a few minutes
-        </h2>
-        <div
-          data-aos="fade-up"
-          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
-        >
-          <LandingStep v-for="step in steps" :key="step.title" :step="step" />
-          <img
-            :src="require('~/assets/img/getting-started/arrow.png')"
-            class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-          <img
-            :src="require('~/assets/img/getting-started/arrow.png')"
-            class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
+    
 
     <!-- FAQ section -->
     <!-- <section class="w-full my-24">
@@ -465,21 +505,21 @@ export default {
       steps: [
         {
           img: 'sign-up.png',
-          title: 'Sign Up',
+          title: 'Pengalaman Banking Komprehensif',
           description:
-            'Sign up for your free NEFA Wallet on web, iOS or Android and follow our easy process to set up your profile',
+            'Tanpa harus pergi ke kantor cabang. Semua layanan perbankan yang kamu perlu kini ada di genggaman!',
         },
         {
           img: 'fund.png',
-          title: 'Fund',
+          title: 'Layanan Finansial Lengkap',
           description:
-            'Choose your preferred payment method such as bank transfer or credit card to top up your NEFA Wallet',
+            'Nggak perlu gonta-ganti! Semua kebutuhan finansial kamu kini bisa terpenuhi lewat satu aplikasi.',
         },
         {
           img: 'buy-crypto.png',
-          title: 'Buy Crypto',
+          title: 'Ekosistem Terbuka',
           description:
-            'Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to your friends anywhere',
+            'Livin by Mandiri terintegrasi dengan ekosistem digital favorit kamu. Lebih fleksibel, lebih praktis!',
         },
       ],
     }
