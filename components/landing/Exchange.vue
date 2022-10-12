@@ -1,13 +1,14 @@
 <template>
   <div class="flex items-center space-x-4">
-    <div class="lg:max-w-[336px] w-full flex items-center relative px-5 py-3 border border-[#0c66ee] rounded-xl">
-      <span class="text-sm font-medium pr-5 py-3 text-[#0c66ee] border-r border-[#0c66ee]"> {{ name }} </span>
+    <div class="lg:max-w-[400px] w-full flex items-center relative px-3 py-1 border border-[#0c66ee] rounded-xl">
+      <span class="text-sm font-medium py-1 text-[#0c66ee]  w-full"> {{ name }}: </span>
+      <!-- border-r border-[#0c66ee] -->
       <input
-        type="text"
+        type="number"
         class="w-full text-lg font-medium text-right border-none ring-0 focus:outline-none focus:ring-0"
         name="url"
+        value="0"
         
-        :placeholder="note.name"
       />
     </div>
     <!-- <div class="relative w-full max-w-[106px] sm:max-w-[159px]">
