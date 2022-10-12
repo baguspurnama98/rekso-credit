@@ -1,31 +1,31 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full pb-32">
+    <section id="hero" class="w-full pb-20 sm:pb-36">
       <BaseSection>
-        <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
-          <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
+        <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 sm:text-left">
+          <span data-aos="fade-right" data-aos-once="true" class="sm:text-base text-gradient font-semibold uppercase text-xs"
             >Terdepan, Terpercaya, Tumbuh Bersama Anda</span
           >
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            class="text-[2.5rem] sm:text-6xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+            class="text-[2.5rem] sm:text-6xl xl:text-6xl font-bold sm:leading-tight leading-10 capitalize sm:pr-8 xl:pr-10"
           >
-            KCP Jakarta <br /><span class="text-header-gradient">Graha Rekso</span><br /><span>Area Pulogadung</span>
+            KCP Jakarta <br /><span class="text-header-gradient">Graha Rekso</span><br /><span class="text-3xl sm:text-6xl">Area Pulogadung</span>
           </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph hidden sm:block">
+          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph sm:text-sm text-xs">
             Mandiri Digital, Tiada Henti Membangun Negeri
           </p>
           <div
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="700"
-            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
+            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
           >
             <a href="#tabelData">
               <BaseButton
-                class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
+                class="max-w-full py-4 text-sm sm:text-xl px-8 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
               >
                 Mulai
               </BaseButton></a
@@ -73,9 +73,9 @@
     <!--  Table Credit Information section -->
     <section
       id="tabelData"
-      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-20 sm:py-10 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
+      class="max-w-screen-xl mx-2 sm:mx-auto  sm:px-6 lg:px-0 py-10 sm:py-10 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
     >
-      <div class="w-full flex flex-col lg:flex-row items-center justify-center mt-10 py-10">
+      <div class="w-full flex flex-col lg:flex-row items-center justify-center sm:px-5 px-1">
         <TableData />
         <!-- <LandingCryptoStatistic
           data-aos="fade-up"

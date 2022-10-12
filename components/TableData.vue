@@ -6,13 +6,13 @@
       <div class="p-1.5 w-full inline-block align-middle">
         <div class="overflow-hidden border rounded-lg relative">
           <table class="table-fixed w-full divide-y divide-gray-200 text-center">
-            <thead class="bg-gray-50">
+            <thead class="bg-gray-50 text-center">
               <tr>
                 <th
                   v-for="(item, idx) in data"
                   :key="idx"
                   scope="col"
-                  class="px-6 py-3 text-xs sm:text-lg font-bold text-gray-500 uppercase "
+                  class="sm:px-6 px-1 text-xs sm:text-lg font-bold text-gray-500 uppercase "
                 >
                   {{ item[0] }}
                 </th>
@@ -22,7 +22,7 @@
               <tr>
                 <td
                   v-for="(item, idx) in data"
-                  :key="idx" class="px-6 py-4 text-sm font-bold text-gray-800 whitespace-nowrap">{{item[1]}}%</td>
+                  :key="idx" class="sm:px-6 px-1 py-4 sm:text-sm text-xs font-bold text-gray-800 whitespace-nowrap">{{item[1]}}%</td>
               </tr>
             </tbody>
           </table>
