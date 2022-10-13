@@ -1,9 +1,6 @@
 # Getting Started
 
 ```bash
-# clone this repository or click 'use this template' button
-$ git clone https://github.com/RSurya99/nefa.git
-
 # install dependencies
 $ yarn install
 

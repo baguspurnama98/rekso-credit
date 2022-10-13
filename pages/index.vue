@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full pb-20 sm:pb-36 sm:my-10 my-5">
+    <section id="hero" class="w-full sm:pb-36 sm:pt-10 pb-20">
       <BaseSection>
         <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 sm:text-left">
           <span
@@ -73,10 +73,16 @@
     <!--  Table Credit Information section -->
     <section
       id="tabelData"
-      class="max-w-screen-xl mx-2 sm:mx-auto sm:px-6 lg:px-0 py-10 sm:py-10 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
+      class="max-w-screen-xl sm:mx-auto sm:px-6 lg:px-0 py-5 rounded-[2.25rem] sm:rounded-xl bg-white transform lg:-translate-y-12"
     >
-      <div class="w-full flex flex-col lg:flex-row items-center justify-center sm:px-5 px-1">
-        <TableData />
+      <div class="w-full justify-center sm:px-5 px-3">
+        <!-- <TableData /> -->
+        <div>
+          <h2 class="sm:text-4xl text-2xl text-center font-semibold pb-10">
+            Syarat Pengajuan Kredit
+          </h2>
+        </div>
+       <CreditInformation/>
       </div>
     </section>
 
@@ -372,5 +378,24 @@ export default {
 }
 .max-h-0 {
   max-height: 0;
+}
+
+.cover-gradient {
+  background: linear-gradient(
+    169.4deg,
+    rgba(57, 132, 244, 0.04) -6.01%,
+    rgba(12, 211, 255, 0.04) 36.87%,
+    rgba(47, 124, 240, 0.04) 78.04%,
+    rgba(14, 101, 232, 0.04) 103.77%
+  );
+}
+.cover-gradient-2 {
+  background: linear-gradient(
+    169.4deg,
+    rgba(57, 132, 244, 0.1) -6.01%,
+    rgba(12, 211, 255, 0.1) 36.87%,
+    rgba(47, 124, 240, 0.1) 78.04%,
+    rgba(14, 101, 232, 0.1) 103.77%
+  );
 }
 </style>

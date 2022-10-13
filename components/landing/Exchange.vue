@@ -8,7 +8,6 @@
         class="w-full text-lg font-medium text-right border-none ring-0 focus:outline-none focus:ring-0"
         name="url"
         value="0"
-        
       />
     </div>
     <!-- <div class="relative w-full max-w-[106px] sm:max-w-[159px]">
