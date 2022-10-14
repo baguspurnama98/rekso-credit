@@ -1,9 +1,9 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full sm:pb-36 sm:pt-10 pb-20">
+    <section id="hero" class="w-full sm:pb-52 sm:pt-10 pb-52">
       <BaseSection>
-        <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 sm:text-left">
+        <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-2 sm:text-left">
           <span
             data-aos="fade-right"
             data-aos-once="true"
@@ -75,7 +75,7 @@
       id="tabelData"
       class="max-w-screen-xl sm:mx-auto sm:px-6 lg:px-0 py-5 rounded-[2.25rem] sm:rounded-xl bg-white transform lg:-translate-y-12"
     >
-      <div class="w-full justify-center sm:px-5 px-3">
+      <div class="w-full justify-center sm:px-5 px-2">
         <!-- <TableData /> -->
         <div>
           <h2 class="sm:text-4xl text-2xl text-center font-semibold pb-10">
@@ -87,7 +87,7 @@
     </section>
 
     <!-- Kredit Calculator section -->
-    <section class="w-full my-10 py-20">
+    <!-- <section class="w-full my-10 py-20">
       <BaseSection>
         <LandingBuyTradeImage class="sm:hidden mb-8" />
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
@@ -106,14 +106,14 @@
         </div>
         <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" />
       </BaseSection>
-    </section>
+    </section> -->
 
     <!-- Partners section -->
     <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
       <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
         <h3 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold">Fun Digital Banking World</h3>
         <p data-aos="flip-down" class="paragraph">
-          Financial Super App Livin' by Mandiri dan Wholesale Digital Super Platform Kopra by Mandiri
+          Nikmati Produk Financial Super App Livin' by Mandiri dan Wholesale Digital Super Platform Kopra by Mandiri
         </p>
         <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
           <LandingPartnerImage v-for="img in ['livin-logo.png', 'kopra-logo.png']" :key="img" :img="img" />
