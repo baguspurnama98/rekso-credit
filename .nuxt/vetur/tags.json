@@ -23,8 +23,11 @@
   "BaseSection": {
     "description": "Auto imported from components/base/Section.vue"
   },
-  "CreditInformation": {
-    "description": "Auto imported from components/credit/CreditInformation.vue"
+  "CreditCard": {
+    "description": "Auto imported from components/credit/CreditCard.vue"
+  },
+  "CreditKSM": {
+    "description": "Auto imported from components/credit/CreditKSM.vue"
   },
   "LandingBuyTradeImage": {
     "description": "Auto imported from components/landing/BuyTradeImage.vue"

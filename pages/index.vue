@@ -82,7 +82,7 @@
             Syarat Pengajuan Kredit
           </h2>
         </div>
-       <CreditInformation/>
+       <CreditKSM />
       </div>
     </section>
 
@@ -203,7 +203,7 @@
         <LandingTradingToolImage class="sm:hidden" />
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
           <h2 class="text-4xl font-semibold">
-            Super Platform <span class="text-header-gradient"><br />Kopra by Mandiri</span>
+            Super Platform <span class="text-header-gradient sm:text-4xl text-3xl"><br />Kopra by Mandiri</span>
           </h2>
           <div class="space-y-2">
             <h4 class="text-lg font-medium">Wholesale Digital Super Platform</h4>
