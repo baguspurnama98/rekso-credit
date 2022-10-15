@@ -23,11 +23,23 @@
   "BaseSection": {
     "description": "Auto imported from components/base/Section.vue"
   },
-  "CreditCard": {
-    "description": "Auto imported from components/credit/CreditCard.vue"
+  "CreditContentCC": {
+    "description": "Auto imported from components/credit/ContentCC.vue"
   },
-  "CreditKSM": {
-    "description": "Auto imported from components/credit/CreditKSM.vue"
+  "CreditContentKPR": {
+    "description": "Auto imported from components/credit/ContentKPR.vue"
+  },
+  "CreditContentKSM": {
+    "description": "Auto imported from components/credit/ContentKSM.vue"
+  },
+  "CreditContentKUM": {
+    "description": "Auto imported from components/credit/ContentKUM.vue"
+  },
+  "CreditContentKUR": {
+    "description": "Auto imported from components/credit/ContentKUR.vue"
+  },
+  "CreditInfo": {
+    "description": "Auto imported from components/credit/CreditInfo.vue"
   },
   "LandingBuyTradeImage": {
     "description": "Auto imported from components/landing/BuyTradeImage.vue"

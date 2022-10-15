@@ -82,7 +82,7 @@
             Syarat Pengajuan Kredit
           </h2>
         </div>
-       <CreditKSM />
+       <CreditInfo />
       </div>
     </section>
 
