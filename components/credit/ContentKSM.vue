@@ -223,7 +223,7 @@
     </div>
 
     <!-- Kalkulator -->
-    <div class="rounded-lg shadow-lg p-5 mt-8 bg-blue-50">
+    <div class="rounded-lg shadow-lg sm:px-5 py-5 px-3  mt-8 bg-blue-50">
       <h2 class="font-bold text-2xl text-center px-4 mb-3">Simulasi KSM</h2>
       <div class="flex flex-col my-2">
         <div class="-mx-3 md:flex mb-3">
@@ -236,7 +236,7 @@
               <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">Rp.</div>
               <input
                 v-model="nominal"
-                type="number"
+                type="text"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
                 placeholder="Masukan Nominal"
                 @input="handleInput"
@@ -270,12 +270,13 @@
                 type="number"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
                 placeholder="Masukan Lama Tenor (Tahun)"
+                @input="resetOnChange"
               />
             </div>
             <p class="text-red text-xs italic pt-1">*Dalam satuan tahun</p>
           </div>
         </div>
-        <div class="-mx-3 md:flex mb-4">
+        <div class="-mx-3 md:flex mb-2">
           <div class="md:w-full px-3">
             <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-password">
               Suku Bunga
@@ -288,6 +289,7 @@
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
                 placeholder="Masukan Suku Bunga (Persen)"
                 step=".01"
+                @input="resetOnChange"
               />
             </div>
             <p class="text-grey-dark text-xs italic pt-1">*Bunga per Tahun</p>
@@ -305,31 +307,31 @@
         </button>
       </div>
 
-      <div :class="{hidden: isAnswerHidden }">
-        <h2>Hasil Simulasi</h2>
-        <table class="text-left" >
+      <div :class="{ hidden: isAnswerHidden }" class="mt-4">
+        <h2 class="font-bold">Hasil Simulasi</h2>
+        <table class="text-left sm:text-base text-sm w-full">
           <tr class="border hover:bg-gray-100">
-            <th scope="row" class=" py-2 px-3 font-medium text-gray-900 whitespace-nowrap">Nominal </th>
-            <td class="py-2 px-3">: Rp. {{nominal}}</td>
+            <th scope="row" class="py-2 px-3 font-medium text-gray-900 whitespace-nowrap">Nominal</th>
+            <td class="py-2 pr-3 ">: Rp. {{ nominal }}</td>
           </tr>
           <tr class="border hover:bg-gray-100">
-            <th scope="row" class=" py-2 px-3 font-medium text-gray-900 whitespace-nowrap">Jangka Waktu </th>
-            <td class="py-2 px-3">: {{tenor}} Tahun</td>
+            <th scope="row" class="py-2 px-3 font-medium text-gray-900 whitespace-nowrap">Jangka Waktu</th>
+            <td class="py-2 pr-3">: {{ tenor }} Tahun</td>
           </tr>
           <tr class="border hover:bg-gray-100">
-            <th scope="row" class="py-2 px-3 font-medium text-gray-900 whitespace-nowrap">Suku Bunga </th>
-            <td class="py-2 px-3">: {{sukuBunga}}%</td>
+            <th scope="row" class="py-2 px-3 font-medium text-gray-900 whitespace-nowrap">Suku Bunga</th>
+            <td class="py-2 pr-3">: {{ sukuBunga }}%</td>
           </tr>
           <tr class="border hover:bg-gray-100">
-            <th scope="row" class=" py-2 px-3 font-medium text-gray-900 whitespace-nowrap">Cicilan per Bulan </th>
-            <td class="py-2 px-3">: Rp. {{cicilan.toFixed(2)}}</td>
+            <th scope="row" class="py-2 px-3 font-medium text-gray-900 whitespace-nowrap">Cicilan per Bulan</th>
+            <td class="py-2 pr-3">: Rp. {{ cicilan }}</td>
           </tr>
         </table>
       </div>
     </div>
 
     <!-- Button Hubungi Kami -->
-    <div class="w-full flex items-end flex-col mt-5">
+    <div class="w-full flex sm:items-end items-center flex-col mt-5">
       <a
         class="mx-auto sm:mx-0"
         href="https://wa.me/628976634788?text=Hai,+saya+ingin+bertanya+terkait+Produk+KMS.+Terima+kasih."
@@ -374,7 +376,7 @@
           Hubungi Kami
         </button></a
       >
-      <p class="text-red text-xs italic pt-1">Atau langsung datang ke KCP Graha Rekso</p>
+      <p class="text-red text-xs italic pt-1">Atau langsung datang ke <a href="https://goo.gl/maps/7scJdohNica8Q3RS7" target="_blank" class="text-black hover:text-blue-400">KCP Graha Rekso</a></p>
     </div>
   </div>
 </template>
@@ -385,6 +387,7 @@ export default {
   data: () => ({
     sukuBunga: '',
     nominal: '',
+    nominalOri: '',
     tenor: '',
     cicilan: 0,
     isAnswerHidden: true,
@@ -392,27 +395,34 @@ export default {
   watch: {
     value: {
       handler(after) {
-        this.currentValue = this.format(after)
+        this.nominal = this.format(after)
       },
       immediate: true,
     },
   },
   methods: {
     onClickHitung() {
-      const N = parseFloat(this.nominal)
+      const N = parseFloat(this.nominal.replace(/[.]/g, ''))
       const B = parseFloat(this.sukuBunga)
       const T = parseFloat(this.tenor)
-      this.cicilan = (N * (B / 100)) / 360 + N / (T / 12)
+      this.cicilan = parseFloat(((N * (B / 100)) / 360).toFixed(0)) + parseFloat((N / T / 12).toFixed(0))
+
+      this.cicilan = this.format(this.cicilan)
       // eslint-disable-next-line no-console
-      console.log(this.cicilan)
+      console.log(((N * (B / 100)) / 360).toFixed(0), (N / T / 12).toFixed(0))
       this.isAnswerHidden = false
     },
     format: (value) => (value + '').replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.'),
 
     handleInput() {
       this.isAnswerHidden = true
+      // this.nominalOri = this.nominal
       this.nominal = this.format(this.nominal)
       this.$emit('input', (this.nominal + '').replace(/[^0-9]/g, ''))
+    },
+
+    resetOnChange() {
+      this.isAnswerHidden = true
     },
   },
 }
