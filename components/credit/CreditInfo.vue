@@ -162,7 +162,7 @@
         aria-controls="accordion-color-body-3"
         @click="toggleAccordion('kum')"
       >
-        <span>Pengajuan Kredit Usaha Mikro (KUM) Digital</span>
+        <span>Pengajuan Kredit Usaha Mikro (KUM)</span>
         <svg
           data-accordion-icon
           class="w-6 h-6 shrink-0"

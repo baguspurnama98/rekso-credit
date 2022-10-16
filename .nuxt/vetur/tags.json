@@ -62,14 +62,11 @@
   "CreditKmkContentKMK": {
     "description": "Auto imported from components/credit/kmk/ContentKMK.vue"
   },
-  "CreditKsmContentKSM": {
-    "description": "Auto imported from components/credit/ksm/ContentKSM.vue"
+  "CreditKmkInfo": {
+    "description": "Auto imported from components/credit/kmk/Info.vue"
   },
-  "CreditKsmInfo": {
-    "description": "Auto imported from components/credit/ksm/Info.vue"
-  },
-  "CreditKsmTableKSM": {
-    "description": "Auto imported from components/credit/ksm/TableKSM.vue"
+  "CreditKmkTableKSM": {
+    "description": "Auto imported from components/credit/kmk/TableKSM.vue"
   },
   "CreditKprContentKPR": {
     "description": "Auto imported from components/credit/kpr/ContentKPR.vue"
@@ -80,11 +77,32 @@
   "CreditKprTableKPR": {
     "description": "Auto imported from components/credit/kpr/TableKPR.vue"
   },
+  "CreditKsmContentKSM": {
+    "description": "Auto imported from components/credit/ksm/ContentKSM.vue"
+  },
+  "CreditKsmInfo": {
+    "description": "Auto imported from components/credit/ksm/Info.vue"
+  },
+  "CreditKsmTableKSM": {
+    "description": "Auto imported from components/credit/ksm/TableKSM.vue"
+  },
   "CreditKumContentKUM": {
     "description": "Auto imported from components/credit/kum/ContentKUM.vue"
   },
+  "CreditKumInfo": {
+    "description": "Auto imported from components/credit/kum/Info.vue"
+  },
+  "CreditKumTableKUM": {
+    "description": "Auto imported from components/credit/kum/TableKUM.vue"
+  },
   "CreditKurContentKUR": {
     "description": "Auto imported from components/credit/kur/ContentKUR.vue"
+  },
+  "CreditKurInfo": {
+    "description": "Auto imported from components/credit/kur/Info.vue"
+  },
+  "CreditKurTableKUR": {
+    "description": "Auto imported from components/credit/kur/TableKUR.vue"
   },
   "CreditMultigunaContentMultiguna": {
     "description": "Auto imported from components/credit/multiguna/ContentMultiguna.vue"
