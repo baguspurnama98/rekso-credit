@@ -29,6 +29,9 @@
   "BaseSection": {
     "description": "Auto imported from components/base/Section.vue"
   },
+  "CreditInfo": {
+    "description": "Auto imported from components/credit/CreditInfo.vue"
+  },
   "LandingBuyTradeImage": {
     "description": "Auto imported from components/landing/BuyTradeImage.vue"
   },
@@ -50,14 +53,17 @@
   "LandingTradingToolImage": {
     "description": "Auto imported from components/landing/TradingToolImage.vue"
   },
-  "CreditInfo": {
-    "description": "Auto imported from components/credit/CreditInfo.vue"
-  },
   "CreditCcContentCC": {
     "description": "Auto imported from components/credit/cc/ContentCC.vue"
   },
   "CreditInvestasiContentInvestasi": {
     "description": "Auto imported from components/credit/investasi/ContentInvestasi.vue"
+  },
+  "CreditInvestasiInfo": {
+    "description": "Auto imported from components/credit/investasi/Info.vue"
+  },
+  "CreditInvestasiTableInvest": {
+    "description": "Auto imported from components/credit/investasi/TableInvest.vue"
   },
   "CreditKmkContentKMK": {
     "description": "Auto imported from components/credit/kmk/ContentKMK.vue"
@@ -65,8 +71,8 @@
   "CreditKmkInfo": {
     "description": "Auto imported from components/credit/kmk/Info.vue"
   },
-  "CreditKmkTableKSM": {
-    "description": "Auto imported from components/credit/kmk/TableKSM.vue"
+  "CreditKmkTableKMK": {
+    "description": "Auto imported from components/credit/kmk/TableKMK.vue"
   },
   "CreditKprContentKPR": {
     "description": "Auto imported from components/credit/kpr/ContentKPR.vue"
