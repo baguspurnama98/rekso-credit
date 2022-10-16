@@ -38,7 +38,7 @@
       }"
       aria-labelledby="accordion-color-heading-1"
     >
-      <ContentKSM />
+      <ContentKSM :bunga="bunga"/>
     </div>
 
     <!-- 2 -->
@@ -118,9 +118,9 @@
 </template>
 
 <script>
-import ContentKSM from './ContentKSM'
-import ContentKPR from './ContentKPR'
-import ContentCC from './ContentCC'
+import ContentKSM from './ksm/ContentKSM'
+import ContentKPR from './kpr/ContentKPR'
+import ContentCC from './cc/ContentCC'
 export default {
   name: 'CreditInfo',
   components: { ContentKSM, ContentKPR, ContentCC },
@@ -128,7 +128,25 @@ export default {
     ccIsOpen: false,
     ksmIsOpen: false,
     kprIsOpen: false,
+    bunga:{
+      ksm:0,
+    }
   }),
+  fetch() {
+    this.$axios
+      .$get(
+        `https://sheets.googleapis.com/v4/spreadsheets/1SWikQcKkDgSTXOUW8JD2b4qcOSTlkEGYh6XE9fS7aL8/values/Sheet1!E1?key=AIzaSyBSWyF6kNY2qB4KklKubjos4u_hNIOFx_I`
+      )
+      .then((resp) => {
+        this.bunga.ksm = resp.values[0][0]
+        // eslint-disable-next-line no-console
+        // console.log(this.sukuBungaAll.ksm)
+      })
+      .catch((errors) => {
+        // eslint-disable-next-line no-console
+        console.dir(errors)
+      })
+  },
   methods: {
     toggleAccordion(x) {
       if (x === 'ksm') {

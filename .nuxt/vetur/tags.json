@@ -14,6 +14,12 @@
   "BaseButton": {
     "description": "Auto imported from components/base/Button.vue"
   },
+  "BaseButtonPengajuan": {
+    "description": "Auto imported from components/base/ButtonPengajuan.vue"
+  },
+  "BaseCorrectIcon": {
+    "description": "Auto imported from components/base/CorrectIcon.vue"
+  },
   "BaseFooter": {
     "description": "Auto imported from components/base/Footer.vue"
   },
@@ -22,24 +28,6 @@
   },
   "BaseSection": {
     "description": "Auto imported from components/base/Section.vue"
-  },
-  "CreditContentCC": {
-    "description": "Auto imported from components/credit/ContentCC.vue"
-  },
-  "CreditContentKPR": {
-    "description": "Auto imported from components/credit/ContentKPR.vue"
-  },
-  "CreditContentKSM": {
-    "description": "Auto imported from components/credit/ContentKSM.vue"
-  },
-  "CreditContentKUM": {
-    "description": "Auto imported from components/credit/ContentKUM.vue"
-  },
-  "CreditContentKUR": {
-    "description": "Auto imported from components/credit/ContentKUR.vue"
-  },
-  "CreditInfo": {
-    "description": "Auto imported from components/credit/CreditInfo.vue"
   },
   "LandingBuyTradeImage": {
     "description": "Auto imported from components/landing/BuyTradeImage.vue"
@@ -61,5 +49,35 @@
   },
   "LandingTradingToolImage": {
     "description": "Auto imported from components/landing/TradingToolImage.vue"
+  },
+  "CreditContentKUM": {
+    "description": "Auto imported from components/credit/ContentKUM.vue"
+  },
+  "CreditContentKUR": {
+    "description": "Auto imported from components/credit/ContentKUR.vue"
+  },
+  "CreditInfo": {
+    "description": "Auto imported from components/credit/CreditInfo.vue"
+  },
+  "CreditCcContentCC": {
+    "description": "Auto imported from components/credit/cc/ContentCC.vue"
+  },
+  "CreditKprContentKPR": {
+    "description": "Auto imported from components/credit/kpr/ContentKPR.vue"
+  },
+  "CreditKprInfo": {
+    "description": "Auto imported from components/credit/kpr/Info.vue"
+  },
+  "CreditKprTableKPR": {
+    "description": "Auto imported from components/credit/kpr/TableKPR.vue"
+  },
+  "CreditKsmContentKSM": {
+    "description": "Auto imported from components/credit/ksm/ContentKSM.vue"
+  },
+  "CreditKsmInfo": {
+    "description": "Auto imported from components/credit/ksm/Info.vue"
+  },
+  "CreditKsmTableKSM": {
+    "description": "Auto imported from components/credit/ksm/TableKSM.vue"
   }
 }
