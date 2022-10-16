@@ -50,17 +50,26 @@
   "LandingTradingToolImage": {
     "description": "Auto imported from components/landing/TradingToolImage.vue"
   },
-  "CreditContentKUM": {
-    "description": "Auto imported from components/credit/ContentKUM.vue"
-  },
-  "CreditContentKUR": {
-    "description": "Auto imported from components/credit/ContentKUR.vue"
-  },
   "CreditInfo": {
     "description": "Auto imported from components/credit/CreditInfo.vue"
   },
   "CreditCcContentCC": {
     "description": "Auto imported from components/credit/cc/ContentCC.vue"
+  },
+  "CreditInvestasiContentInvestasi": {
+    "description": "Auto imported from components/credit/investasi/ContentInvestasi.vue"
+  },
+  "CreditKmkContentKMK": {
+    "description": "Auto imported from components/credit/kmk/ContentKMK.vue"
+  },
+  "CreditKsmContentKSM": {
+    "description": "Auto imported from components/credit/ksm/ContentKSM.vue"
+  },
+  "CreditKsmInfo": {
+    "description": "Auto imported from components/credit/ksm/Info.vue"
+  },
+  "CreditKsmTableKSM": {
+    "description": "Auto imported from components/credit/ksm/TableKSM.vue"
   },
   "CreditKprContentKPR": {
     "description": "Auto imported from components/credit/kpr/ContentKPR.vue"
@@ -71,13 +80,19 @@
   "CreditKprTableKPR": {
     "description": "Auto imported from components/credit/kpr/TableKPR.vue"
   },
-  "CreditKsmContentKSM": {
-    "description": "Auto imported from components/credit/ksm/ContentKSM.vue"
+  "CreditKumContentKUM": {
+    "description": "Auto imported from components/credit/kum/ContentKUM.vue"
   },
-  "CreditKsmInfo": {
-    "description": "Auto imported from components/credit/ksm/Info.vue"
+  "CreditKurContentKUR": {
+    "description": "Auto imported from components/credit/kur/ContentKUR.vue"
   },
-  "CreditKsmTableKSM": {
-    "description": "Auto imported from components/credit/ksm/TableKSM.vue"
+  "CreditMultigunaContentMultiguna": {
+    "description": "Auto imported from components/credit/multiguna/ContentMultiguna.vue"
+  },
+  "CreditMultigunaInfo": {
+    "description": "Auto imported from components/credit/multiguna/Info.vue"
+  },
+  "CreditMultigunaTableMultiguna": {
+    "description": "Auto imported from components/credit/multiguna/TableMultiguna.vue"
   }
 }
