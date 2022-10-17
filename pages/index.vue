@@ -110,7 +110,7 @@
 
 
 <!-- Promo section -->
-<section class="w-full my-24">
+<!-- <section class="w-full my-24">
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
         
         <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
@@ -143,7 +143,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- Partners section -->
