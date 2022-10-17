@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full sm:pb-52 sm:pt-10 pb-52">
+    <section id="hero" class="w-full sm:pb-52 sm:pt-10 pb-40">
       <BaseSection>
         <div class="col-span-12 lg:col-span-7 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-2 sm:text-left">
           <span
@@ -27,8 +27,15 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="700"
-            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            class="flex flex-row space-x-4"
           >
+            <a href="/super_promo">
+              <BaseButton
+                class="bg-gradient-to-r from-[#befc5a] to-[#57ee00] text-black sm:text-xl text-sm font-bold sm:px-8 px-4  py-4 text-center rounded-full"
+              >
+                Super Promo
+              </BaseButton></a
+            >
             <a href="#tabelData">
               <BaseButton
                 class="max-w-full py-4 text-sm sm:text-xl px-8 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
@@ -69,10 +76,7 @@
         />
       </BaseSection>
     </section>
-    <!-- Promo -->
-    <section id="promo" class="max-w-screen-xl sm:mx-auto sm:px-6 lg:px-0 py-5 rounded-[2.25rem] sm:rounded-xl bg-white transform lg:-translate-y-12">
-      <PromoCarousel />
-    </section>
+
     <!--  Credit Information -->
     <section
       id="tabelData"
@@ -81,7 +85,9 @@
       <div class="w-full justify-center sm:px-5 px-2">
         <!-- <TableData /> -->
         <div>
-          <h2 class="sm:text-4xl text-2xl text-center font-semibold pb-10">Syarat Pengajuan Kredit</h2>
+          <h2 class="sm:text-4xl text-2xl text-center font-semibold pb-10">
+            Syarat Pengajuan<span class="text-header-gradient"> Kredit</span>
+          </h2>
         </div>
         <CreditInfo />
       </div>
@@ -147,7 +153,7 @@
 
     <!-- Partners section -->
     <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
+      <div class="w-full px-6 sm:px-0 py-10 flex flex-col items-center justify-center space-y-4 text-center">
         <h3 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold">Fun Digital Banking World</h3>
         <p data-aos="flip-down" class="paragraph">
           Nikmati Produk Financial Super App Livin' by Mandiri dan Wholesale Digital Super Platform Kopra by Mandiri
@@ -216,7 +222,8 @@
     <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
       <div class="w-full py-16 flex flex-col items-center">
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
-          Sahabat Terbaik dalam Hal Finansial
+          Sahabat Terbaik dalam
+          <span class="text-header-gradient"> Hal Finansial</span>
         </h2>
         <div
           data-aos="fade-up"

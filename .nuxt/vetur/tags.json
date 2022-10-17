@@ -11,9 +11,6 @@
   "TableData": {
     "description": "Auto imported from components/TableData.vue"
   },
-  "CreditInfo": {
-    "description": "Auto imported from components/credit/CreditInfo.vue"
-  },
   "BaseAccordion": {
     "description": "Auto imported from components/base/Accordion.vue"
   },
@@ -34,6 +31,9 @@
   },
   "BaseSection": {
     "description": "Auto imported from components/base/Section.vue"
+  },
+  "CreditInfo": {
+    "description": "Auto imported from components/credit/CreditInfo.vue"
   },
   "LandingBuyTradeImage": {
     "description": "Auto imported from components/landing/BuyTradeImage.vue"
@@ -59,6 +59,24 @@
   "CreditCcContentCC": {
     "description": "Auto imported from components/credit/cc/ContentCC.vue"
   },
+  "CreditInvestasiContentInvestasi": {
+    "description": "Auto imported from components/credit/investasi/ContentInvestasi.vue"
+  },
+  "CreditInvestasiInfo": {
+    "description": "Auto imported from components/credit/investasi/Info.vue"
+  },
+  "CreditInvestasiTableInvest": {
+    "description": "Auto imported from components/credit/investasi/TableInvest.vue"
+  },
+  "CreditKmkContentKMK": {
+    "description": "Auto imported from components/credit/kmk/ContentKMK.vue"
+  },
+  "CreditKmkInfo": {
+    "description": "Auto imported from components/credit/kmk/Info.vue"
+  },
+  "CreditKmkTableKMK": {
+    "description": "Auto imported from components/credit/kmk/TableKMK.vue"
+  },
   "CreditKprContentKPR": {
     "description": "Auto imported from components/credit/kpr/ContentKPR.vue"
   },
@@ -76,24 +94,6 @@
   },
   "CreditKsmTableKSM": {
     "description": "Auto imported from components/credit/ksm/TableKSM.vue"
-  },
-  "CreditKmkContentKMK": {
-    "description": "Auto imported from components/credit/kmk/ContentKMK.vue"
-  },
-  "CreditKmkInfo": {
-    "description": "Auto imported from components/credit/kmk/Info.vue"
-  },
-  "CreditKmkTableKMK": {
-    "description": "Auto imported from components/credit/kmk/TableKMK.vue"
-  },
-  "CreditInvestasiContentInvestasi": {
-    "description": "Auto imported from components/credit/investasi/ContentInvestasi.vue"
-  },
-  "CreditInvestasiInfo": {
-    "description": "Auto imported from components/credit/investasi/Info.vue"
-  },
-  "CreditInvestasiTableInvest": {
-    "description": "Auto imported from components/credit/investasi/TableInvest.vue"
   },
   "CreditKumContentKUM": {
     "description": "Auto imported from components/credit/kum/ContentKUM.vue"

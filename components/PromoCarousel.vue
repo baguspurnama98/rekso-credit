@@ -33,14 +33,16 @@
     <div>
     </div>
   </div> -->
-  <div class="swiper">
+  <div class="swiper bg-green-200 rounded-2xl">
     <div class="swiper-wrapper">
-      <div v-for="(item, i) in data" :key="i" class="swiper-slide px-2 py-2" >
-        <div class="w-full">
-            <div v-for="(text, j) in item" :key="j" class="block w-full sm:text-base text-sm ">
-            {{text}}
-          </div>
+      <div v-for="(item, i) in data" :key="i" class="swiper-slide px-10 py-10">
+        <div class="block w-full sm:text-base text-sm text-justify">
+          <ul class="list-none">
+            <li v-for="(text, j) in item" :key="j">
 
+              {{ text!=''? text:''}}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -61,12 +63,6 @@ export default {
   name: 'PromoCarousel',
   data: () => ({
     data: '',
-    images: [
-      'https://picsum.photos/id/237/1024/800',
-      'https://picsum.photos/id/238/1024/800',
-      'https://picsum.photos/id/239/1024/800',
-    ],
-    active: 0,
   }),
   fetch() {
     this.$axios
@@ -84,6 +80,8 @@ export default {
           if (promoText[i][0] !== '-DONE-') {
             if (promoText[i].length !== 0) {
               tempText.push(promoText[i][0])
+            } else {
+              tempText.push(" ")
             }
           } else {
             textFormated.push(tempText)
@@ -110,7 +108,7 @@ export default {
     }, 3000)
 
     Swiper.use([Navigation, Pagination, Autoplay])
-    
+
     // init Swiper:
     /* eslint-disable no-unused-vars */
     const swiper = new Swiper('.swiper', {
@@ -124,21 +122,20 @@ export default {
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        clickable: true
+        clickable: true,
       },
       // Autoplay if needed
       autoplay: {
-        delay: 3000
+        delay: 5000,
       },
       // Navigation arrows if needed
       navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
+        prevEl: '.swiper-button-prev',
+      },
       // Configure other options. Not tested
     })
   },
-
 }
 </script>
 
@@ -190,5 +187,5 @@ export default {
 }
 .slide--6 {
   background-color: #2ecc71;
-}   
+}
 </style>
