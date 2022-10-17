@@ -6,7 +6,7 @@
       <TableKMK />
     </div> -->
     <!-- Button Hubungi Kami -->
-    <ButtonPengajuan :waNumber="'628976634788'" :jenisKredit="'KMK'" />
+    <ButtonPengajuan :waNumber="'6281388870915'" :jenisKredit="'KMK'" />
   </div>
 </template>
 

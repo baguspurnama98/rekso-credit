@@ -6,7 +6,7 @@
       <TableKUM />
     </div>
     <!-- Button Hubungi Kami -->
-    <ButtonPengajuan :waNumber="'628976634788'" :jenisKredit="'KUM'" />
+    <ButtonPengajuan :waNumber="'6287876545796'" :jenisKredit="'KUM'" />
   </div>
 </template>
 

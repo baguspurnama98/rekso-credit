@@ -121,7 +121,7 @@
     </div>
 
     <!-- Button Hubungi Kami -->
-    <ButtonPengajuan :waNumber="'628976634788'" :jenisKredit="'KSM'" />
+    <ButtonPengajuan :waNumber="'6281388870915'" :jenisKredit="'KSM'" />
   </div>
 </template>
 

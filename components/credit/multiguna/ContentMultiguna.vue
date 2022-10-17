@@ -121,7 +121,7 @@
     </div> -->
 
     <!-- Button Hubungi Kami -->
-    <ButtonPengajuan :waNumber="'628976634788'" :jenisKredit="'Mandiri Multiguna'" />
+    <ButtonPengajuan :waNumber="'6287876545796'" :jenisKredit="'Mandiri Multiguna'" />
   </div>
 </template>
 

@@ -3,16 +3,18 @@
 <!-- eslint-disable prefer-const -->
 
 <template>
-  <div class="swiper bg-green-200 rounded-2xl">
+  <div class="swiper bg-yellow-50 rounded-2xl rounded-tl-none rounded-tr-none">
     <div class="swiper-wrapper">
       <div v-for="(item, i) in data" :key="i" class="swiper-slide px-10 py-10">
         <div class="grid sm:grid-cols-2 grid-cols-1 w-full sm:text-base text-sm text-justify">
           <div class="sm:order-none order-last">
-            <ul class="list-none">
+            <ol class="list-none">
+              
               <li v-for="(text, j) in item" :key="j">
-                {{ text != '' ? text : '' }}
+                {{ text === 'break' ? '_' : text }}
               </li>
-            </ul>
+            
+            </ol>
           </div>
           <div class="">
             <img :src="require(`@/assets/img/random/${Math.floor(Math.random() * 10) + 1}-min.png`)" alt="" />
@@ -55,7 +57,7 @@ export default {
             if (promoText[i].length !== 0) {
               tempText.push(promoText[i][0])
             } else {
-              tempText.push(' ')
+              tempText.push('break')
             }
           } else {
             textFormated.push(tempText)

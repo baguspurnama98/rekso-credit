@@ -5,7 +5,7 @@
       <InfoKPR />
 
       <!-- Button Hubungi Kami -->
-    <ButtonPengajuan :waNumber="'628976634788'" :jenisKredit="'KPR'" />
+    <ButtonPengajuan :waNumber="'6281298981727'" :jenisKredit="'KPR'" />
     </div>
     
 
