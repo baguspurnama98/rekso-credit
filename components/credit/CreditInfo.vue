@@ -2,7 +2,7 @@
   <div
     id="accordion-color"
     data-accordion="collapse"
-    data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"
+    data-active-classes="bg-blue-100 text-blue-600"
   >
     <!-- 1 -->
     <h2 id="accordion-color-heading-1">

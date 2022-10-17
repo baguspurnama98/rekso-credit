@@ -3,7 +3,7 @@
 <template>
   
         <div class="p-1.5 border rounded-lg overflow-x-auto md:overflow-hidden w-full">
-          <h1 class="font-bold p-2 text-xl">{{this.title}}</h1>
+          <h1 class="font-bold p-2 text-xl">{{title}}</h1>
           <table class="table-auto md:table-fixed w-full text-center p-2 m-1 divide-y divide-gray-200"> 
             
             <thead class="bg-gray-50 text-center">

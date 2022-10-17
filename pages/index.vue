@@ -69,8 +69,11 @@
         />
       </BaseSection>
     </section>
-
-    <!--  Table Credit Information section -->
+    <!-- Promo -->
+    <section id="promo" class="max-w-screen-xl sm:mx-auto sm:px-6 lg:px-0 py-5 rounded-[2.25rem] sm:rounded-xl bg-white transform lg:-translate-y-12">
+      <PromoCarousel />
+    </section>
+    <!--  Credit Information -->
     <section
       id="tabelData"
       class="max-w-screen-xl sm:mx-auto sm:px-6 lg:px-0 py-5 rounded-[2.25rem] sm:rounded-xl bg-white transform lg:-translate-y-12"
@@ -78,11 +81,9 @@
       <div class="w-full justify-center sm:px-5 px-2">
         <!-- <TableData /> -->
         <div>
-          <h2 class="sm:text-4xl text-2xl text-center font-semibold pb-10">
-            Syarat Pengajuan Kredit
-          </h2>
+          <h2 class="sm:text-4xl text-2xl text-center font-semibold pb-10">Syarat Pengajuan Kredit</h2>
         </div>
-       <CreditInfo />
+        <CreditInfo />
       </div>
     </section>
 
@@ -108,9 +109,8 @@
       </BaseSection>
     </section> -->
 
-
-<!-- Promo section -->
-<!-- <section class="w-full my-24">
+    <!-- Promo section -->
+    <!-- <section class="w-full my-24">
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
         
         <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
@@ -144,7 +144,6 @@
         </div>
       </div>
     </section> -->
-
 
     <!-- Partners section -->
     <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
@@ -186,16 +185,18 @@
             <LandingListItem title="Goal Saving & Deposito" />
           </ul>
           <div class="flex flex-col sm:flex-row">
-            <a href="https://livin.page.link/?utm_medium=12518&utm_source=cab1389521014&utm_campaign=dl&apn=id.bmri.livin&isi=1555414743&ibi=id.bmri.livin&link=https%3A//livin.page.link/referral?p%3Ddl%26c%3Dcab1389521014%26cabang%3D12518" target="_blank">
-              <BaseButton
-                class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium "
+            <a
+              href="https://livin.page.link/?utm_medium=12518&utm_source=cab1389521014&utm_campaign=dl&apn=id.bmri.livin&isi=1555414743&ibi=id.bmri.livin&link=https%3A//livin.page.link/referral?p%3Ddl%26c%3Dcab1389521014%26cabang%3D12518"
+              target="_blank"
+            >
+              <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium"
                 >Bergabung</BaseButton
               >
             </a>
             <a href="https://bankmandiri.co.id/en/livin" target="_blank">
-            <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center rounded-full sm:ml-5 w-full">
-              Pelajari
-            </BaseButton>
+              <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center rounded-full sm:ml-5 w-full">
+                Pelajari
+              </BaseButton>
             </a>
           </div>
           <!-- <div>
@@ -211,8 +212,8 @@
         </div>
       </BaseSection>
     </section>
-<!-- Getting started section -->
-<section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
+    <!-- Getting started section -->
+    <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
       <div class="w-full py-16 flex flex-col items-center">
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
           Sahabat Terbaik dalam Hal Finansial
@@ -294,10 +295,6 @@
         <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" />
       </div>
     </section>
-
-    
-
-    
 
     <!-- FAQ section -->
     <!-- <section class="w-full my-24">
