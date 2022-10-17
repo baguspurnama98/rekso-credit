@@ -3,46 +3,20 @@
 <!-- eslint-disable prefer-const -->
 
 <template>
-  <!-- <div>
-    <div class="relative slide">
-      
-      <div class="carousel-inner relative overflow-hidden w-full bg-blue-50 rounded-xl p-5 text-sm sm:text-normal">
-        <div
-          v-for="(item, i) in data"
-          :id="`slide-${i}`"
-          :key="i"
-          :class="`${active === i ? 'active' : 'left-full'}`"
-          class="carousel-item inset-0 relative w-full transform transition-all duration-500 ease-in-out "
-        >
-
-          <div v-for="(text, j) in item" :key="j" class="block w-full">
-            {{text}}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-indicators absolute bottom-0 flex h-24 w-full justify-center items-center">
-        <ol class="z-50 flex w-4/12 justify-center">
-          <li
-            v-for="(item, k) in data"
-            :key="k"
-            class="md:w-4 md:h-4 bg-gray-300 rounded-full cursor-pointer mx-2"
-          ></li>
-        </ol>
-      </div>
-    <div>
-    </div>
-  </div> -->
   <div class="swiper bg-green-200 rounded-2xl">
     <div class="swiper-wrapper">
       <div v-for="(item, i) in data" :key="i" class="swiper-slide px-10 py-10">
-        <div class="block w-full sm:text-base text-sm text-justify">
-          <ul class="list-none">
-            <li v-for="(text, j) in item" :key="j">
-
-              {{ text!=''? text:''}}
-            </li>
-          </ul>
+        <div class="grid sm:grid-cols-2 grid-cols-1 w-full sm:text-base text-sm text-justify">
+          <div class="sm:order-none order-last">
+            <ul class="list-none">
+              <li v-for="(text, j) in item" :key="j">
+                {{ text != '' ? text : '' }}
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <img :src="require(`@/assets/img/random/${Math.floor(Math.random() * 10) + 1}-min.png`)" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -62,7 +36,7 @@ import 'swiper/swiper-bundle.min.css'
 export default {
   name: 'PromoCarousel',
   data: () => ({
-    data: '',
+    data: [],
   }),
   fetch() {
     this.$axios
@@ -81,7 +55,7 @@ export default {
             if (promoText[i].length !== 0) {
               tempText.push(promoText[i][0])
             } else {
-              tempText.push(" ")
+              tempText.push(' ')
             }
           } else {
             textFormated.push(tempText)
@@ -100,7 +74,7 @@ export default {
   mounted() {
     let i = 0
     setInterval(() => {
-      if (i > this.images.length - 1) {
+      if (i > this.data.length - 1) {
         i = 0
       }
       this.active = i
@@ -136,6 +110,7 @@ export default {
       // Configure other options. Not tested
     })
   },
+  methods: {},
 }
 </script>
 
