@@ -45,9 +45,9 @@
             >
           </div>
         </div>
-        <div class="hidden sm:block col-span-12 lg:col-span-5">
+        <div class="hidden sm:block col-span-12 lg:col-span-5 ">
           <div class="w-full">
-            <img data-aos="fade-up" data-aos-once="true" :src="require('~/assets/img/faq.webp')" class="-mt-4" alt="" />
+            <img data-aos="fade-up" data-aos-once="true" :src="require('~/assets/img/hero2.png')" class="-mt-4" alt="" />
           </div>
         </div>
         <img

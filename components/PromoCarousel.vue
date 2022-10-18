@@ -10,8 +10,8 @@
           <div class="sm:order-none order-last">
             <ol class="list-none">
               
-              <li v-for="(text, j) in item" :key="j">
-                {{ text === 'break' ? '_' : text }}
+              <li v-for="(text, j) in item" :key="j" >
+                {{ text === 'break' ? '.' : text }}
               </li>
             
             </ol>

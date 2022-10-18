@@ -3,14 +3,12 @@
     "name": "super_promo",
     "path": "/super_promo",
     "component": "F:\\\\Class ODP 236\\\\BranchX\\\\Project\\\\ReksoCredit2\\\\pages\\\\super_promo.vue",
-    "chunkName": "pages/super_promo",
-    "_name": "_5ae05605"
+    "chunkName": "pages/super_promo"
   },
   {
     "name": "index",
     "path": "/",
     "component": "F:\\\\Class ODP 236\\\\BranchX\\\\Project\\\\ReksoCredit2\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_09f81ce8"
+    "chunkName": "pages/index"
   }
 ]

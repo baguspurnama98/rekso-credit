@@ -1,9 +1,5 @@
 <template>
-  <div
-    id="accordion-color"
-    data-accordion="collapse"
-    data-active-classes="bg-blue-100 text-blue-600"
-  >
+  <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-blue-100 text-blue-600">
     <!-- 1 -->
     <h2 id="accordion-color-heading-1">
       <button
@@ -75,7 +71,7 @@
       }"
       aria-labelledby="accordion-color-heading-2"
     >
-      <ContentKPR />
+      <ContentKPR :bunga="bunga" />
     </div>
 
     <!-- 3 -->
@@ -152,8 +148,8 @@
       <ContentMulti />
     </div>
 
-     <!-- 5 -->
-     <h2 id="accordion-color-heading-3">
+    <!-- 5 -->
+    <h2 id="accordion-color-heading-3">
       <button
         type="button"
         class="flex items-center justify-between w-full p-5 font-semibold text-lg text-left text-gray-600 border border-b-0 border-gray-100 focus:ring-4 focus:ring-blue-200 bg-blue-100 hover:bg-blue-300"
@@ -226,9 +222,8 @@
       <ContentKUR />
     </div>
 
-
-     <!-- 7 -->
-     <h2 id="accordion-color-heading-3">
+    <!-- 7 -->
+    <h2 id="accordion-color-heading-3">
       <button
         type="button"
         class="flex items-center justify-between w-full p-5 font-semibold text-lg text-left text-gray-600 border border-b-0 border-gray-100 focus:ring-4 focus:ring-blue-200 bg-blue-100 hover:bg-blue-300"
@@ -268,7 +263,7 @@
     <h2 id="accordion-color-heading-3">
       <button
         type="button"
-        class="flex items-center justify-between w-full p-5 font-semibold text-lg text-left  text-gray-600 border border-b-0 border-gray-100 focus:ring-4 focus:ring-blue-200 bg-blue-100 hover:bg-blue-300"
+        class="flex items-center justify-between w-full p-5 font-semibold text-lg text-left text-gray-600 border border-b-0 border-gray-100 focus:ring-4 focus:ring-blue-200 bg-blue-100 hover:bg-blue-300"
         data-accordion-target="#accordion-color-body-3"
         aria-expanded="true"
         aria-controls="accordion-color-body-3"
@@ -322,18 +317,19 @@ export default {
     kprIsOpen: false,
     multigunaIsOpen: false,
     kumIsOpen: false,
-    kurIsOpen:false,
-    kmkIsOpen:false,
+    kurIsOpen: false,
+    kmkIsOpen: false,
     investIsOpen: false,
 
     bunga: {
       ksm: 0,
-      kpr:0,
-      cc:0,
-      multi:0,
-      kum:0,
-      kur:0,
-      kmk:0,invest:0,
+      kpr: 0,
+      cc: 0,
+      multi: 0,
+      kum: 0,
+      kur: 0,
+      kmk: 0,
+      invest: 0,
     },
   }),
   fetch() {
@@ -343,6 +339,7 @@ export default {
       )
       .then((resp) => {
         this.bunga.ksm = resp.values[0][0]
+        this.bunga.kpr = resp.values[1][0]
         // this.bunga.multi = resp.values[0][0]
         // eslint-disable-next-line no-console
         // console.log(this.sukuBungaAll.ksm)
