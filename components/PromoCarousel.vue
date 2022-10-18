@@ -6,14 +6,12 @@
   <div class="swiper bg-yellow-50 rounded-2xl rounded-tl-none rounded-tr-none">
     <div class="swiper-wrapper">
       <div v-for="(item, i) in data" :key="i" class="swiper-slide px-10 py-10">
-        <div class="grid sm:grid-cols-2 grid-cols-1 w-full sm:text-base text-sm text-justify">
+        <div class="grid sm:grid-cols-2 grid-cols-1 w-full sm:text-lg text-sm text-justify">
           <div class="sm:order-none order-last">
             <ol class="list-none">
-              
-              <li v-for="(text, j) in item" :key="j" >
+              <li v-for="(text, j) in item" :key="j">
                 {{ text === 'break' ? '.' : text }}
               </li>
-            
             </ol>
           </div>
           <div class="">
@@ -74,15 +72,6 @@ export default {
       })
   },
   mounted() {
-    let i = 0
-    setInterval(() => {
-      if (i > this.data.length - 1) {
-        i = 0
-      }
-      this.active = i
-      i++
-    }, 3000)
-
     Swiper.use([Navigation, Pagination, Autoplay])
 
     // init Swiper:
@@ -102,7 +91,7 @@ export default {
       },
       // Autoplay if needed
       autoplay: {
-        delay: 5000,
+        delay: 6000,
       },
       // Navigation arrows if needed
       navigation: {
