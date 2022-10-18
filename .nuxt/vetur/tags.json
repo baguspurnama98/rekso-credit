@@ -8,8 +8,26 @@
   "PromoCarousel": {
     "description": "Auto imported from components/PromoCarousel.vue"
   },
-  "TableData": {
-    "description": "Auto imported from components/TableData.vue"
+  "BaseAccordion": {
+    "description": "Auto imported from components/base/Accordion.vue"
+  },
+  "BaseButton": {
+    "description": "Auto imported from components/base/Button.vue"
+  },
+  "BaseButtonPengajuan": {
+    "description": "Auto imported from components/base/ButtonPengajuan.vue"
+  },
+  "BaseCorrectIcon": {
+    "description": "Auto imported from components/base/CorrectIcon.vue"
+  },
+  "BaseFooter": {
+    "description": "Auto imported from components/base/Footer.vue"
+  },
+  "BaseNavbar": {
+    "description": "Auto imported from components/base/Navbar.vue"
+  },
+  "BaseSection": {
+    "description": "Auto imported from components/base/Section.vue"
   },
   "CreditInfo": {
     "description": "Auto imported from components/credit/CreditInfo.vue"
@@ -35,44 +53,11 @@
   "LandingTradingToolImage": {
     "description": "Auto imported from components/landing/TradingToolImage.vue"
   },
-  "BaseAccordion": {
-    "description": "Auto imported from components/base/Accordion.vue"
-  },
-  "BaseButton": {
-    "description": "Auto imported from components/base/Button.vue"
-  },
-  "BaseButtonPengajuan": {
-    "description": "Auto imported from components/base/ButtonPengajuan.vue"
-  },
-  "BaseCorrectIcon": {
-    "description": "Auto imported from components/base/CorrectIcon.vue"
-  },
-  "BaseFooter": {
-    "description": "Auto imported from components/base/Footer.vue"
-  },
-  "BaseNavbar": {
-    "description": "Auto imported from components/base/Navbar.vue"
-  },
-  "BaseSection": {
-    "description": "Auto imported from components/base/Section.vue"
-  },
   "CreditCcContentCC": {
     "description": "Auto imported from components/credit/cc/ContentCC.vue"
   },
   "CreditCcInfo": {
     "description": "Auto imported from components/credit/cc/Info.vue"
-  },
-  "CreditKprCalculator": {
-    "description": "Auto imported from components/credit/kpr/Calculator.vue"
-  },
-  "CreditKprContentKPR": {
-    "description": "Auto imported from components/credit/kpr/ContentKPR.vue"
-  },
-  "CreditKprInfo": {
-    "description": "Auto imported from components/credit/kpr/Info.vue"
-  },
-  "CreditKprTableKPR": {
-    "description": "Auto imported from components/credit/kpr/TableKPR.vue"
   },
   "CreditInvestasiContentInvestasi": {
     "description": "Auto imported from components/credit/investasi/ContentInvestasi.vue"
@@ -103,6 +88,18 @@
   },
   "CreditKsmTableKSM": {
     "description": "Auto imported from components/credit/ksm/TableKSM.vue"
+  },
+  "CreditKprCalculator": {
+    "description": "Auto imported from components/credit/kpr/Calculator.vue"
+  },
+  "CreditKprContentKPR": {
+    "description": "Auto imported from components/credit/kpr/ContentKPR.vue"
+  },
+  "CreditKprInfo": {
+    "description": "Auto imported from components/credit/kpr/Info.vue"
+  },
+  "CreditKprTableKPR": {
+    "description": "Auto imported from components/credit/kpr/TableKPR.vue"
   },
   "CreditKumContentKUM": {
     "description": "Auto imported from components/credit/kum/ContentKUM.vue"

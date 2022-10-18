@@ -1,10 +1,10 @@
 <!-- eslint-disable vue/attribute-hyphenation -->
 <template>
-<div class="py-5 px-3 font-normal border border-b-0 border-gray-200">
+  <div class="py-5 px-3 font-normal border border-b-0 border-gray-200">
     <InfoKUR />
-    <!-- <div>
+    <div>
       <TableKUR />
-    </div> -->
+    </div>
     <!-- Button Hubungi Kami -->
     <ButtonPengajuan :waNumber="'6287876545796'" :jenisKredit="'KUR'" />
   </div>
@@ -12,11 +12,10 @@
 
 <script>
 import ButtonPengajuan from '../../base/ButtonPengajuan'
-// import TableKUR from './TableKUR'
+import TableKUR from './TableKUR'
 import InfoKUR from './Info'
 export default {
   name: 'ContentKUR',
-  components: { InfoKUR, ButtonPengajuan },
-
+  components: { InfoKUR, ButtonPengajuan, TableKUR },
 }
 </script>

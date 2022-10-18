@@ -2,9 +2,9 @@
 <template>
   <div class="py-5 px-3 font-normal border border-b-0 border-gray-200">
     <InfoKMK />
-    <!-- <div>
+    <div>
       <TableKMK />
-    </div> -->
+    </div>
     <!-- Button Hubungi Kami -->
     <ButtonPengajuan :waNumber="'6281388870915'" :jenisKredit="'KMK'" />
   </div>
@@ -12,10 +12,10 @@
 
 <script>
 import ButtonPengajuan from '../../base/ButtonPengajuan'
-// import TableKUM from './TableKUM'
+import TableKMK from './TableKMK'
 import InfoKMK from './Info'
 export default {
   name: 'ContentKMK',
-  components: { InfoKMK, ButtonPengajuan },
+  components: { InfoKMK, ButtonPengajuan, TableKMK },
 }
 </script>

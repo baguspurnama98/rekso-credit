@@ -2,9 +2,9 @@
 <template>
   <div class="py-5 px-3 font-normal border border-b-0 border-gray-200">
     <Info />
-    <!-- <div>
-      <TableKUM />
-    </div> -->
+    <div>
+      <TableInvest />
+    </div>
     <!-- Button Hubungi Kami -->
     <ButtonPengajuan :waNumber="'6281388870915'" :jenisKredit="'Investasi'" />
   </div>
@@ -12,10 +12,10 @@
 
 <script>
 import ButtonPengajuan from '../../base/ButtonPengajuan'
-// import TableKUM from './TableInvest'
+import TableInvest from './TableInvest'
 import Info from './Info'
 export default {
   name: 'ContentInvest',
-  components: { Info, ButtonPengajuan,  },
+  components: { Info, ButtonPengajuan, TableInvest },
 }
 </script>

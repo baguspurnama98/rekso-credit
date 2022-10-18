@@ -1,6 +1,6 @@
 <template>
   <div class="p-1.5 border rounded-lg overflow-x-auto md:overflow-hidden w-full mt-8">
-    <h1 class="font-bold p-2 text-xl text-center">Perhitungan KSM</h1>
+    <h1 class="font-bold p-2 text-xl text-center">Perhitungan KMK</h1>
     <table class="table-auto md:table-fixed w-full text-center p-2 m-1 divide-y divide-gray-200">
       <thead class="bg-gray-50 text-center">
         <tr>
@@ -39,7 +39,7 @@ export default {
   fetch() {
     this.$axios
       .$get(
-        `https://sheets.googleapis.com/v4/spreadsheets/1SWikQcKkDgSTXOUW8JD2b4qcOSTlkEGYh6XE9fS7aL8/values/Sheet1!A33:E44?key=AIzaSyBSWyF6kNY2qB4KklKubjos4u_hNIOFx_I`
+        `https://sheets.googleapis.com/v4/spreadsheets/1SWikQcKkDgSTXOUW8JD2b4qcOSTlkEGYh6XE9fS7aL8/values/SukuBunga!A79:E90?key=AIzaSyBSWyF6kNY2qB4KklKubjos4u_hNIOFx_I`
       )
       .then((resp) => {
         this.title = resp.values[0][0]

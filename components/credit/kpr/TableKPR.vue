@@ -39,7 +39,7 @@ export default {
   fetch() {
     this.$axios
       .$get(
-        `https://sheets.googleapis.com/v4/spreadsheets/1SWikQcKkDgSTXOUW8JD2b4qcOSTlkEGYh6XE9fS7aL8/values/Sheet1!A20:E31?key=AIzaSyBSWyF6kNY2qB4KklKubjos4u_hNIOFx_I`
+        `https://sheets.googleapis.com/v4/spreadsheets/1SWikQcKkDgSTXOUW8JD2b4qcOSTlkEGYh6XE9fS7aL8/values/SukuBunga!A27:E38?key=AIzaSyBSWyF6kNY2qB4KklKubjos4u_hNIOFx_I`
       )
       .then((resp) => {
         this.title = resp.values[0][0]
