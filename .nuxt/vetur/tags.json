@@ -29,6 +29,9 @@
   "BaseSection": {
     "description": "Auto imported from components/base/Section.vue"
   },
+  "CreditInfo": {
+    "description": "Auto imported from components/credit/CreditInfo.vue"
+  },
   "LandingBuyTradeImage": {
     "description": "Auto imported from components/landing/BuyTradeImage.vue"
   },
@@ -50,32 +53,11 @@
   "LandingTradingToolImage": {
     "description": "Auto imported from components/landing/TradingToolImage.vue"
   },
-  "CreditInfo": {
-    "description": "Auto imported from components/credit/CreditInfo.vue"
-  },
   "CreditCcContentCC": {
     "description": "Auto imported from components/credit/cc/ContentCC.vue"
   },
   "CreditCcInfo": {
     "description": "Auto imported from components/credit/cc/Info.vue"
-  },
-  "CreditInvestasiContentInvestasi": {
-    "description": "Auto imported from components/credit/investasi/ContentInvestasi.vue"
-  },
-  "CreditInvestasiInfo": {
-    "description": "Auto imported from components/credit/investasi/Info.vue"
-  },
-  "CreditInvestasiTableInvest": {
-    "description": "Auto imported from components/credit/investasi/TableInvest.vue"
-  },
-  "CreditKmkContentKMK": {
-    "description": "Auto imported from components/credit/kmk/ContentKMK.vue"
-  },
-  "CreditKmkInfo": {
-    "description": "Auto imported from components/credit/kmk/Info.vue"
-  },
-  "CreditKmkTableKMK": {
-    "description": "Auto imported from components/credit/kmk/TableKMK.vue"
   },
   "CreditKprCalculator": {
     "description": "Auto imported from components/credit/kpr/Calculator.vue"
@@ -89,6 +71,24 @@
   "CreditKprTableKPR": {
     "description": "Auto imported from components/credit/kpr/TableKPR.vue"
   },
+  "CreditInvestasiContentInvestasi": {
+    "description": "Auto imported from components/credit/investasi/ContentInvestasi.vue"
+  },
+  "CreditInvestasiInfo": {
+    "description": "Auto imported from components/credit/investasi/Info.vue"
+  },
+  "CreditInvestasiTableInvest": {
+    "description": "Auto imported from components/credit/investasi/TableInvest.vue"
+  },
+  "CreditKumContentKUM": {
+    "description": "Auto imported from components/credit/kum/ContentKUM.vue"
+  },
+  "CreditKumInfo": {
+    "description": "Auto imported from components/credit/kum/Info.vue"
+  },
+  "CreditKumTableKUM": {
+    "description": "Auto imported from components/credit/kum/TableKUM.vue"
+  },
   "CreditKsmCalculator": {
     "description": "Auto imported from components/credit/ksm/Calculator.vue"
   },
@@ -101,14 +101,14 @@
   "CreditKsmTableKSM": {
     "description": "Auto imported from components/credit/ksm/TableKSM.vue"
   },
-  "CreditKumContentKUM": {
-    "description": "Auto imported from components/credit/kum/ContentKUM.vue"
+  "CreditKmkContentKMK": {
+    "description": "Auto imported from components/credit/kmk/ContentKMK.vue"
   },
-  "CreditKumInfo": {
-    "description": "Auto imported from components/credit/kum/Info.vue"
+  "CreditKmkInfo": {
+    "description": "Auto imported from components/credit/kmk/Info.vue"
   },
-  "CreditKumTableKUM": {
-    "description": "Auto imported from components/credit/kum/TableKUM.vue"
+  "CreditKmkTableKMK": {
+    "description": "Auto imported from components/credit/kmk/TableKMK.vue"
   },
   "CreditKurContentKUR": {
     "description": "Auto imported from components/credit/kur/ContentKUR.vue"
@@ -133,5 +133,11 @@
   },
   "CreditPayrollInfo": {
     "description": "Auto imported from components/credit/payroll/Info.vue"
+  },
+  "CreditSmeContentSME": {
+    "description": "Auto imported from components/credit/sme/ContentSME.vue"
+  },
+  "CreditSmeInfo": {
+    "description": "Auto imported from components/credit/sme/Info.vue"
   }
 }

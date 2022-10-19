@@ -230,6 +230,43 @@
         data-accordion-target="#accordion-color-body-3"
         aria-expanded="true"
         aria-controls="accordion-color-body-3"
+        @click="toggleAccordion('sme')"
+      >
+        <span>Pengajuan Small Medium Enterprise (SME)</span>
+        <svg
+          data-accordion-icon
+          class="w-6 h-6 shrink-0"
+          :class="{ 'rotate-180': smeIsOpen }"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-color-body-3"
+      :class="{
+        hidden: !smeIsOpen,
+      }"
+      aria-labelledby="accordion-color-heading-2"
+    >
+      <ContentSME />
+    </div>
+
+    <!-- 7 -->
+    <h2 id="accordion-color-heading-3">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full p-5 font-semibold text-lg text-left text-gray-600 border border-b-0 border-gray-100 focus:ring-4 focus:ring-blue-200 bg-blue-100 hover:bg-blue-300"
+        data-accordion-target="#accordion-color-body-3"
+        aria-expanded="true"
+        aria-controls="accordion-color-body-3"
         @click="toggleAccordion('kmk')"
       >
         <span>Pengajuan Kredit Modal Kerja (KMK)</span>
@@ -307,10 +344,21 @@ import ContentKUR from './kur/ContentKUR'
 import ContentKUM from './kum/ContentKUM'
 import ContentKMK from './kmk/ContentKMK'
 import ContentPayroll from './payroll/ContentPayroll'
+import ContentSME from './sme/ContentSME'
 
 export default {
   name: 'CreditInfo',
-  components: { ContentKSM, ContentKPR, ContentCC, ContentMulti, ContentKUR, ContentKUM, ContentKMK, ContentPayroll },
+  components: {
+    ContentKSM,
+    ContentKPR,
+    ContentCC,
+    ContentMulti,
+    ContentKUR,
+    ContentKUM,
+    ContentKMK,
+    ContentPayroll,
+    ContentSME,
+  },
   data: () => ({
     ccIsOpen: false,
     ksmIsOpen: false,
@@ -319,6 +367,7 @@ export default {
     kumIsOpen: false,
     kurIsOpen: false,
     kmkIsOpen: false,
+    smeIsOpen: false,
     // investIsOpen: false,
     payrollIsOpen: false,
     bunga: {
@@ -382,6 +431,9 @@ export default {
       // }
       if (x === 'payroll') {
         this.payrollIsOpen = !this.payrollIsOpen
+      }
+      if (x === 'sme') {
+        this.smeIsOpen = !this.smeIsOpen
       }
     },
   },
