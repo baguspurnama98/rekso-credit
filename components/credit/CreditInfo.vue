@@ -267,13 +267,13 @@
         data-accordion-target="#accordion-color-body-3"
         aria-expanded="true"
         aria-controls="accordion-color-body-3"
-        @click="toggleAccordion('invest')"
+        @click="toggleAccordion('payroll')"
       >
-        <span>Pengajuan Kredit Investasi</span>
+        <span>Pengajuan Payroll</span>
         <svg
           data-accordion-icon
           class="w-6 h-6 shrink-0"
-          :class="{ 'rotate-180': investIsOpen }"
+          :class="{ 'rotate-180': payrollIsOpen }"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -289,11 +289,11 @@
     <div
       id="accordion-color-body-3"
       :class="{
-        hidden: !investIsOpen,
+        hidden: !payrollIsOpen,
       }"
       aria-labelledby="accordion-color-heading-2"
     >
-      <ContentInvest />
+      <ContentPayroll />
     </div>
   </div>
 </template>
@@ -306,11 +306,11 @@ import ContentMulti from './multiguna/ContentMultiguna'
 import ContentKUR from './kur/ContentKUR'
 import ContentKUM from './kum/ContentKUM'
 import ContentKMK from './kmk/ContentKMK'
-import ContentInvest from './investasi/ContentInvestasi'
+import ContentPayroll from './payroll/ContentPayroll'
 
 export default {
   name: 'CreditInfo',
-  components: { ContentKSM, ContentKPR, ContentCC, ContentMulti, ContentKUR, ContentKUM, ContentKMK, ContentInvest },
+  components: { ContentKSM, ContentKPR, ContentCC, ContentMulti, ContentKUR, ContentKUM, ContentKMK, ContentPayroll },
   data: () => ({
     ccIsOpen: false,
     ksmIsOpen: false,
@@ -319,8 +319,8 @@ export default {
     kumIsOpen: false,
     kurIsOpen: false,
     kmkIsOpen: false,
-    investIsOpen: false,
-
+    // investIsOpen: false,
+    payrollIsOpen: false,
     bunga: {
       ksm: 0,
       kpr: 0,
@@ -329,7 +329,7 @@ export default {
       kum: 0,
       kur: 0,
       kmk: 0,
-      invest: 0,
+      // invest: 0,
     },
   }),
   fetch() {
@@ -344,7 +344,7 @@ export default {
         this.bunga.kum = resp.values[3][0]
         this.bunga.kur = resp.values[4][0]
         this.bunga.kmk = resp.values[5][0]
-        this.bunga.invest = resp.values[6][0]
+        // this.bunga.invest = resp.values[6][0]
         // this.bunga.multi = resp.values[0][0]
         // eslint-disable-next-line no-console
         console.log(this.bunga)
@@ -377,8 +377,11 @@ export default {
       if (x === 'kmk') {
         this.kmkIsOpen = !this.kmkIsOpen
       }
-      if (x === 'invest') {
-        this.investIsOpen = !this.investIsOpen
+      // if (x === 'invest') {
+      //   this.investIsOpen = !this.investIsOpen
+      // }
+      if (x === 'payroll') {
+        this.payrollIsOpen = !this.payrollIsOpen
       }
     },
   },

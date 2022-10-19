@@ -37,7 +37,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-        Ajukan {{ jenisKredit }}
+        Tanyakan ke PIC {{ jenisKredit }}
       </button></a
     >
     <p class="text-red text-xs italic pt-1">

@@ -191,17 +191,17 @@
             <LandingListItem title="Goal Saving & Deposito" />
           </ul>
           <div class="flex flex-col sm:flex-row">
-            <a
+            <!-- <a
               href="https://livin.page.link/?utm_medium=12518&utm_source=cab1389521014&utm_campaign=dl&apn=id.bmri.livin&isi=1555414743&ibi=id.bmri.livin&link=https%3A//livin.page.link/referral?p%3Ddl%26c%3Dcab1389521014%26cabang%3D12518"
               target="_blank"
             >
               <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium"
                 >Bergabung</BaseButton
               >
-            </a>
+            </a> -->
             <a href="https://bankmandiri.co.id/en/livin" target="_blank">
-              <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center rounded-full sm:ml-5 w-full">
-                Pelajari
+              <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">
+                Selengkapnya
               </BaseButton>
             </a>
           </div>
@@ -290,7 +290,7 @@
             <a href="https://bankmandiri.co.id/en/kopra-by-mandiri" target="_blank">
               <BaseButton
                 class="mt-5 w-full sm:max-w-[250px] p-3 bg-inherit text-gradient border border-[#0c66ee] text-base"
-                >Pelajari Selengkapnya</BaseButton
+                >Selengkapnya</BaseButton
               >
             </a>
 
